@@ -1,0 +1,69 @@
+<!-- USED FOR TESTING, INITALIZING ACTUAL CODE ON index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wonderland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/christmasTree.png">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="snow"></div>
+    
+    <header>
+        <h1 class="title">🎄 Merry Christmas 🎅</h1>
+    </header>
+
+    
+    <div id="santa">
+        <img src="assets/santaFlying.png" alt="Flying Santa">
+    </div>
+
+    
+    <main>
+        
+        <section id="tree-section">
+            <img src="assets/christmasTree.png" alt="Christmas Tree" id="tree">
+            <h2>Enjoy the Festivities!</h2>
+        </section>
+
+        
+        <section id="gifts-section">
+           
+            <h2>🎁 Pick Your Gift 🎁</h2>
+            <div class="gifts-container">
+                <div class="gift" onclick="revealGift(1)"><i class="fas fa-gift"></i></div>
+                <div class="gift" onclick="revealGift(2)"><i class="fas fa-gift"></i></div>
+                <div class="gift" onclick="revealGift(3)"><i class="fas fa-gift"></i></div>
+            </div>
+            <div id="gift-popup" class="popup" style="display:none;">
+                <div class="popup-content">
+                    <h2>🎁 Surprise Gift!</h2>
+                    <img id="gift-image" src="" alt="Gift" />
+                    <p id="gift-description"></p>
+                    <button onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>© 2024 Christmas Wonderland | Made with ❤️(Will fix the bugs)</p>
+    </footer>
+
+    
+    <audio id="bg-music" loop autoplay>
+        <source src="music/christmas.mp3" type="audio/mp3">
+    </audio>
+
+    
+    <script src="libs/particles.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
